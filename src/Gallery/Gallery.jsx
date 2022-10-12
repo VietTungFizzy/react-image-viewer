@@ -12,6 +12,7 @@ function Gallery(props) {
             clearInterval(interval);
         }
     }, []);
+    
     const navigate = useNavigate();
     const location = useLocation();
     const currentImageId = /\d/g.exec(location.pathname)?.at(0);
